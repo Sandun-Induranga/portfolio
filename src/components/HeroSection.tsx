@@ -1,5 +1,5 @@
-import React from 'react';
 import { Box, Typography, Button, Container } from '@mui/material';
+import HeroImage from '../assets/hero-image.jpg';
 
 const HeroSection = () => {
   return (
@@ -23,9 +23,9 @@ const HeroSection = () => {
       </Container>
       <Box>
         <img
-          src="https://via.placeholder.com/400"
+          src={HeroImage}
           alt="Sandun Induranga"
-          style={{ borderRadius: '8px', width: '400px' }}
+          style={{ borderRadius: '8px', height: '400px' }}
         />
       </Box>
     </Box>
