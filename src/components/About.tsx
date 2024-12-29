@@ -1,4 +1,5 @@
 import { Box, Typography, Button, Grid, Avatar } from '@mui/material';
+import AboutImage from '../assets/about-image.jpeg';
 
 const AboutSection = () => {
   return (
@@ -10,26 +11,26 @@ const AboutSection = () => {
         borderRadius: '8px',
       }}
     >
+        <Typography variant="h4" style={{ marginBottom: '1rem', textAlign: "center" }}>
+            About Me
+          </Typography>
       <Grid container spacing={4} alignItems="center">
         {/* Left Section: Image */}
         <Grid item xs={12} md={4}>
           <Avatar
-            src="https://via.placeholder.com/300"
+            src={AboutImage}
             alt="Profile"
             sx={{
-              width: '100%',
-              height: 'auto',
+              width: '300px',
+              height: '320px',
               borderRadius: '16px',
-              boxShadow: '0 4px 20px rgba(255, 255, 255, 0.1)',
             }}
           />
         </Grid>
 
         {/* Right Section: Text Content */}
         <Grid item xs={12} md={8}>
-          <Typography variant="h4" style={{ marginBottom: '1rem' }}>
-            About Me
-          </Typography>
+          
           <Typography variant="body1" style={{ marginBottom: '1rem', lineHeight: 1.8 }}>
             <strong>Name:</strong> Sandun Induranga<br />
             <strong>Age:</strong> 23<br />
