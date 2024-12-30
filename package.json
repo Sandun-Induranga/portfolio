@@ -46,7 +46,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react": "^19.0.2",
+    "@types/react": "^18.0.2",
     "ajv": "^7.2.4"
   }
 }
